@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@300..700&family=Teko:wght@300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+#body {
+    background-image: url("/public/img/marek-piwnicki-fgZO-k47XTQ-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#tittle-todo {
+    font-family: 'Comfortaa', 'sans-serif';
+    font-weight: 700;
+    background-color: rgba(51, 233, 133, 0.836);
+    color: #000000;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.397);
+    margin-bottom: 7px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#container-todo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+}
+
+#square-todo{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+#add-todo{
+    display: flex;
+    align-self: self-start;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#edit-todo{
+    display: flex;
+    align-self: self-start;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin: 8px;
+    font-family: 'Comfortaa', 'sans-serif';
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#filter-search-todo{
+    display: flex;
+    align-self: self-start;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+#filter {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5rem;
+    border-left: 1px solid #ccc;
+}
+
+#filter > select {
+    flex: 1;
+    width: 100px;
+    font-family: 'Comfortaa', 'sans-serif';
+    font-weight: 500;
+    font-size:12px;
+    padding: .25rem;
+}
+
+#search > input {
+    padding: 0.2rem;
+    width: 150px;
+}
+
+#todos {
+    display: flex;
+    align-self: self-start;
+    flex-direction: column;
+    gap: 1px;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(240, 228, 67, 0.836);
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: 'Comfortaa', 'sans-serif';
+    font-weight: 600;
+    font-size: 16px;
+    gap: 60px;
+    transition: .3s;
+}
+
+.checked {
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.done {
+    background-color: rgba(51, 233, 133, 0.836);
+}
+
+.hide {
+    display: none;
+}
+
+button {
+    background-color: rgba(37, 39, 38, 0.747);
+    border: none;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-weight: 500;
+    padding: 0.3rem;
+    font-family: 'Comfortaa', 'sans-serif';
+    font-weight: 500;
+    font-size:12px;
+}
+
+button:hover {
+    background-color: #000000dc;
+    font-weight: 500;
+}
+
+.margin-button {
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+
+.delete-button {
+    background-color: rgba(236, 43, 9, 0.801);
+}
+
+.delete-button:hover {
+    background-color: rgb(236, 43, 9);
+}
+
+#deleteall {
+    background-color: rgba(192, 18, 99, 0.747);
+}
+
+#deleteall:hover {
+    background-color: rgb(236, 43, 9);
+}

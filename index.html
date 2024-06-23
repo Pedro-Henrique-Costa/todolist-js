@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body id="body">
+    <main id="main">
+        <div id="container-todo">
+            <div id="square-todo">
+                <div id="tittle-todo">
+                    <h2>Lista de a fazeres</h2>
+                </div>
+                <form id="add-todo">
+                    <div id="content-add-todo">
+                        <h3>Adicione sua tarefa</h3>
+                        <input type="text" placeholder="O que você vai fazer?" id="input-todo" required>
+                        <button type="submit">Adicionar</button>
+                        <button id="deleteall">Delete All</button>
+                    </div>
+                </form>
+                <form id="edit-todo">
+                    <div id="content-edit-todo" class="hide">
+                        <h3>Edite sua tarefa</h3>
+                        <input type="text" placeholder="O que você vai fazer?" id="input-edit-todo" value="3">
+                        <button type="submit" id="edit-done-button">Concluido</button>
+                        <button type="submit" id="cancel-edit-button">Cancelar</button>
+                    </div>
+                </form>
+                <div id="filter-search-todo">
+                    <div id="search">
+                        <h3>Pesquisar:</h3>
+                        <input type="text" placeholder="Buscar" id="search-input">
+                        <button id="search-button">Pesquisar</button>
+                    </div>
+                    <div id="filter">
+                        <h3 id="filter-h3">Filtrar:</h3>
+                        <select name="" onchange="onSelectOption(this);" id="filter-select">
+                            <option value="all" id="option-all">Todos</option>
+                            <option value="done" id="option-done">Feitos</option>
+                            <option value="todo" id="option-todo">A fazer</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="todos" >
+                    <!-- <div class="todo">
+                        <p class="text-todo">Tarefa 1</p>
+                        <div class="tools-todo">
+                            <button class="done-button">Feito</button>
+                            <button class="edit-button">Editar</button>
+                            <button class="delete-button">Deletar</button>
+                        </div>
+                    </div>
+                     -->
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
